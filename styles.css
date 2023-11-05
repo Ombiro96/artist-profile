@@ -132,6 +132,9 @@ header > button{
     cursor: pointer;
 }
 
+.red-heart {
+    color: red;
+}
 
 footer {
     position: fixed;
@@ -164,4 +167,33 @@ footer > button{
     color: white;
     display: flex;
     align-items: center;
+}
+
+/* pop up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
